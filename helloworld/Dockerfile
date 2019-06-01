@@ -1,4 +1,4 @@
 FROM scratch
 ADD helloworld /
-RUN chmod +x helloworld
+RUN /bin/sh -c "chmod +x helloworld"
 CMD ["/helloworld"]
